@@ -1,7 +1,6 @@
 # Clustering
 
 Clustering is a means to categorize unlabeled data in specific clusters, where each cluster has as unique identifier, akin to a class label.
-
 Clustering helps differentiate amongst different datapoints when they are unlabeled based on a similarity metric.
 
 In certain cases, obtaining labeled data can be very expensive especially when you're working in a deep scientific field and need domain experts to properly label your data.
@@ -131,14 +130,14 @@ This consists of:
 4. Choose a centroid, drawn randomly via weighted probabilities yielded by $P(x_i)$
 5. Repeat for all $k$ centroids.[^4]
 
-### Choosing a value for $K$
+### Choosing a value for $K$[^3]
 
 We can use the $WCSS$ as a measure for choosing the optimal value of $K$, but we don't choose a $K$ that yields the lowest $WCSS$, otherwise it'd be obvious to cheat and pick $K$ to be equivalent to $len(X)$.
 
 What can be done instead is to look for the $K$ where $Z_k$ stops decreasing quickly or at the *elbow* of a plotted $K$ and $Z_k$.
 
 <div align = 'center'>
-<img src = 'media/zk.png' width = 500></img><br>
+<img src = 'imgs/zk.png' width = 500></img><br>
 </div>
 <br>
 
@@ -176,11 +175,29 @@ Of course, given that we initialize $k$ centroids ($\mu$) randomly, it's very li
 5. Reassign each point to the nearest centroid via the euclidean distance.
 6. Repeat until no points change clusters and the $WCSS$ is minimized
 
+[^3]: but if the position of the clusters differs per iteration, how would we know which k is optimal? wouldn't metrics be inconsistent?
 
-#### Useful Resources:
+# Hierarchical Clustering
+
+Won't be covering Hierarchical Clustering as it isn't near relevant to Deep Learning as K-Means is. I'm optimizing for deep learning.
+But here are some useful resources:
+
+https://www.cs.princeton.edu/courses/archive/fall18/cos324/files/hierarchical-clustering.pdf
+
+https://www.econ.upf.edu/~michael/stanford/maeb7.pdf
+
+https://www.youtube.com/watch?v=esmzYhuFnds&t=2197s
+
+https://en.wikipedia.org/wiki/Hierarchical_clustering
+
+Also checkout introduction to statistical learning.
+
+#### Other Useful Resources:
 
 [Video on K-means by Stanford CS221](https://www.youtube.com/watch?v=5-Fn8R9fH7A)
 
 [Handout on K-Means by Stanford CS221](https://stanford.edu/~cpiech/cs221/handouts/kmeans.html)
 
 [K-means by Cornell CS4/5780](https://www.cs.cornell.edu/courses/cs4780/2022sp/notes/LectureNotes04.html)
+
+[PDF on Hierarchical by Princeton](https://www.cs.princeton.edu/courses/archive/fall18/cos324/files/hierarchical-clustering.pdf) -means by Cornell CS4/5780](https://www.cs.cornell.edu/courses/cs4780/2022sp/notes/LectureNotes04.html)
