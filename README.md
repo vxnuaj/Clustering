@@ -68,6 +68,8 @@ It's better well suited for hierarchical data such as a taxonomies.
 
 ## K-Means Clustering
 
+<img src = 'media/kmeans.mp4'></img>
+
 Notation:
 
 - $C_j$ is the $jth$ cluster
@@ -138,7 +140,7 @@ We can use the $WCSS$ as a measure for choosing the optimal value of $K$, but we
 What can be done instead is to look for the $K$ where $Z_k$ stops decreasing quickly or at the *elbow* of a plotted $K$ and $Z_k$.
 
 <div align = 'center'>
-<img src = 'imgs/zk.png' width = 500></img><br>
+<img src = 'media/zk.png' width = 500></img><br>
 </div>
 <br>
 
