@@ -175,8 +175,6 @@ Of course, given that we initialize $k$ centroids ($\mu$) randomly, it's very li
 5. Reassign each point to the nearest centroid via the euclidean distance.
 6. Repeat until no points change clusters and the $WCSS$ is minimized
 
-[^3]: but if the position of the clusters differs per iteration, how would we know which k is optimal? wouldn't metrics be inconsistent?
-
 # Hierarchical Clustering
 
 Won't be covering Hierarchical Clustering as it isn't near relevant to Deep Learning as K-Means is. I'm optimizing for deep learning.
