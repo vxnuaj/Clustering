@@ -1,3 +1,5 @@
+![clustering](https://github.com/user-attachments/assets/8276269f-adaf-490a-90ea-f1abeca43085)
+
 # Clustering
 
 Clustering is a means to categorize unlabeled data in specific clusters, where each cluster has as unique identifier, akin to a class label.
