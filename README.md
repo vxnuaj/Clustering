@@ -68,8 +68,6 @@ It's better well suited for hierarchical data such as a taxonomies.
 
 ## K-Means Clustering
 
-<img src = 'media/kmeans.mp4'></img>
-
 Notation:
 
 - $C_j$ is the $jth$ cluster
